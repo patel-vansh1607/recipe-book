@@ -1,38 +1,46 @@
-.App {
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fefcfb;
+  padding: 2rem;
+  color: #333;
+}
+
+.app {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+h1 {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.recipe-form input,
+.recipe-form textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.recipe-form button {
+  padding: 0.75rem 1.5rem;
+  background-color: #ff7043;
+  border: none;
   color: white;
+  cursor: pointer;
+  border-radius: 6px;
 }
 
-.App-link {
-  color: #61dafb;
+.recipe-list {
+  margin-top: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.recipe-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: #fff5f0;
 }
